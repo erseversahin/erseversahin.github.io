@@ -27,3 +27,67 @@ body {
         font-weight: 600;
     }
 }
+
+.tech-stack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    .tech-stack-item {
+        padding: 10px;
+        height: 38px;
+        border: 1px solid #f4de1e;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 6px;
+
+        .title {
+            /*  color: #f4de1e; */
+            font-size: 1rem;
+            line-height: 1rem;
+        }
+
+        .icon {
+            color: #f4de1e;
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+            margin-right: 5px;
+        }
+    }
+}
+
+.social-media {
+    margin-bottom: 15px;
+
+    .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+
+        a {
+            text-decoration: none;
+            font-size: 2rem;
+            line-height: 1.2rem;
+            margin-right: 5px;
+            background-color: #303030;
+            padding: 10px;
+            border-radius: 10px;
+            color: #ffffff;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            min-width: 60px;
+        }
+    }
+}

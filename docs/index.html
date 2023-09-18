@@ -7,14 +7,199 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Şahin ERSEVER - Sr. Full Stack Developer</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 
 <body>
     <section class="intro">
         <img src="assets/images/sahinersever.svg" width="100" height="100" alt="Şahin ERSEVER">
         <h1>Şahin ERSEVER</h1>
-        <h2>Sr. Full-Stack Developer</h1>
+        <h2>Sr. Full-Stack Developer | CTO <a target="_blank"
+                style="text-decoration: none; color: white; font-size: 1.3rem;" href="https://onedocs.com">@onedocs</a>
+            </h1>
+
+            <div class="social-media">
+
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/sahinersever/" target="_blank">
+                        <i class="devicon-linkedin-plain"></i>
+                    </a>
+                    <a href="https://github.com/erseversahin" target="_blank">
+                        <i class="devicon-github-original"></i>
+                    </a>
+                    <a href="https://sahinersever.medium.com/" target="_blank">
+                        Blog
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h1 style="text-align: center;">Tech Stack</h1>
+                <div class="tech-stack">
+
+                </div>
+            </div>
     </section>
+
 </body>
+
+<script>
+    const techStack = [
+        {
+            name: 'JavaScript',
+            icon: 'devicon-javascript-plain'
+        },
+        {
+            name: 'NodeJS',
+            icon: 'devicon-nodejs-plain colored'
+        },
+        {
+            name: 'ReactJS',
+            icon: 'devicon-react-original'
+        },
+        {
+            name: 'React Native',
+            icon: 'devicon-react-original'
+        },
+        {
+            name: 'ExpressJS',
+            icon: 'devicon-express-original'
+        },
+        {
+            name: 'NextJS',
+            icon: 'devicon-nextjs-original'
+        },
+        {
+            name: 'Redux',
+            icon: 'devicon-redux-original'
+        },
+        {
+            name: 'VueJS',
+            icon: 'devicon-vuejs-plain'
+        },
+        {
+            name: 'PHP',
+            icon: 'devicon-php-plain'
+        },
+        {
+            name: 'Laravel',
+            icon: 'devicon-laravel-plain'
+        },
+        {
+            name: 'Codeigniter',
+            icon: 'devicon-codeigniter-plain'
+        },
+        {
+            name: 'HTML5',
+            icon: 'devicon-html5-plain'
+        },
+        {
+            name: 'CSS3',
+            icon: 'devicon-css3-plain'
+        },
+        {
+            name: 'SASS',
+            icon: 'devicon-sass-original'
+        },
+        {
+            name: 'MySQL',
+            icon: 'devicon-mysql-plain'
+        },
+        {
+            name: 'MongoDB',
+            icon: 'devicon-mongodb-plain'
+        },
+        {
+            name: 'Redis',
+            icon: 'devicon-redis-plain'
+        },
+        {
+            name: 'Docker',
+            icon: 'devicon-docker-plain'
+        },
+        {
+            name: "GCP",
+            icon: 'devicon-googlecloud-plain'
+        },
+        {
+            name: 'AWS',
+            icon: 'devicon-amazonwebservices-original'
+        },
+        {
+            name: 'Nginx',
+            icon: 'devicon-nginx-original'
+        },
+        {
+            name: 'Apache',
+            icon: 'devicon-apache-plain'
+        },
+        {
+            name: 'Git',
+            icon: 'devicon-git-plain'
+        },
+        {
+            name: 'Github',
+            icon: 'devicon-github-original'
+        },
+        {
+            name: 'Gitlab',
+            icon: 'devicon-gitlab-plain'
+        },
+        {
+            name: 'Bitbucket',
+            icon: 'devicon-bitbucket-original'
+        },
+        {
+            name: 'Jira',
+            icon: 'devicon-jira-plain'
+        },
+        {
+            name: 'Trello',
+            icon: 'devicon-trello-plain'
+        },
+        {
+            name: 'Slack',
+            icon: 'devicon-slack-plain'
+        },
+        {
+            name: 'Postman',
+            icon: 'devicon-postman-plain'
+        },
+        {
+            name: 'Linux',
+            icon: 'devicon-linux-plain'
+        },
+        {
+            name: 'Ubuntu',
+            icon: 'devicon-ubuntu-plain'
+        },
+        {
+            name: 'Windows',
+            icon: 'devicon-windows8-plain'
+        }
+    ]
+
+    const techStackContainer = document.querySelector('.tech-stack')
+
+    techStack.forEach((item) => {
+        const techStackItem = document.createElement('div')
+        techStackItem.classList.add('tech-stack-item')
+
+        const icon = document.createElement('span')
+        icon.classList.add('icon')
+        icon.innerHTML = `<i class="${item.icon}"></i>`
+
+        const title = document.createElement('span')
+        title.classList.add('title')
+        title.innerText = item.name
+
+        techStackItem.appendChild(icon)
+        techStackItem.appendChild(title)
+
+        techStackContainer.appendChild(techStackItem)
+    })
+
+
+
+</script>
 
 </html>
