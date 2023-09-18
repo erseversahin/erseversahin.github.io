@@ -147,6 +147,7 @@ body {
   justify-content: center;
   gap: 10px;
   flex-direction: column;
+  overflow: auto;
 }
 .intro h1 {
   font-size: 3rem;
